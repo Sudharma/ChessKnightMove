@@ -21,7 +21,7 @@ public class Board {
 	}
 
 	/**
-	 * Initialize chess board
+	 * Initialize chess board as of now only 8x8 is supported
 	 * 
 	 * @param x
 	 * @param y
