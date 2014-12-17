@@ -24,7 +24,7 @@ public class Knight extends Piece {
 
 	private Color color;
 
-	/** reason for using AL is because of always traversing the list */
+	/** stack for getting previous move if in case lost of moves */
 	private Stack<Square> movesDone = new Stack<>();
 
 	public Collection<Square> elapsedMoves() {
