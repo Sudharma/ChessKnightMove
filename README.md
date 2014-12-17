@@ -7,20 +7,18 @@ Build using ant:
 
 #Prerequisite to Run the program
   
-•	Java 1.8 
-•	If Eclipse , LUNA version.
-•	Ant version > 1.9.0
-•	Junit 4.0
+â€¢	Java 1.8 
+â€¢	If Eclipse , LUNA version.
+â€¢	Ant version > 1.9.0
+â€¢	Junit 4.0
 
 # Running
-
-Running without a Number file, will result in reading number from STDIN:
 
     java -jar chess-knight-move.jar
 
 for help
 
-     java –jar chess-knight-move.jar –h or --help
+     java â€“jar chess-knight-move.jar â€“h or --help
 
 # Design overview
 
@@ -28,7 +26,7 @@ Firstly, please refer the doc/chess_knight_moves.xlsx for understanding of the l
 
 The collection package contains the objects that represent  the chessboard as well as the various chess-players. If game is extended for moving for any other piece this package will have an additional entities like pawn,bishop ,king etc.. Piece is the abstract class which can be implemented by any specific piece(Knight for us in particular) with respect to rule. All the changes/implementations goes inside one piece making sure the strong behavior.
 
-Each Player is a Runnable thread which takes a Play object and alternatively plays for each object with wait and notify mechanism. Play class is a synchronized which has separate implementations for each black and white player.
+Each Player is a Runnable thread which takes a Play object and alternatively plays for each object with wait and notify mechanism. Play class methods are synchronized which has separate implementations for each black and white player.
 
 ChessContext is for storing the objects which are needed for application(chess) to use.
 
