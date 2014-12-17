@@ -14,8 +14,6 @@ Build using ant:
 
 # Running
 
-Running without a Number file, will result in reading number from STDIN:
-
     java -jar chess-knight-move.jar
 
 for help
